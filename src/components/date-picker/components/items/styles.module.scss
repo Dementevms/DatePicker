@@ -1,0 +1,40 @@
+.items {
+  display: grid;
+  gap: 10px 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.years,
+.months {
+  display: grid;
+  gap: 4px 0;
+  grid-template-columns: repeat(3, 84px);
+  grid-template-rows: repeat(4, 36px);
+}
+
+.days {
+  display: grid;
+  gap: 4px 0;
+  grid-template-columns: repeat(7, 36px);
+  grid-template-rows: repeat(auto, 36px);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+}
+
+.selected {
+  background-color: red;
+}
+
+.ranged {
+  background-color: green;
+}
+
+.disabled {
+  background-color: aqua;
+}
